@@ -1,4 +1,10 @@
 import React from 'react';
+import Intro from './Intro/Intro'
+import Competence from './Competence/Competence'
+import Portfolio from './Portfolio/Portfolio'
+
+
+import './Home.css'
 
 function Home() {
 
@@ -6,7 +12,9 @@ function Home() {
 
     return(
         <div>
-            <h1>Portfolio de Loïs</h1>
+            <Intro />
+            <Competence />
+            <Portfolio />
         </div>
     )
 }
