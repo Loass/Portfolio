@@ -64,11 +64,12 @@
 
 
 .navbar-title {
-    width: 20%;
-    margin-right: 5vw;
+    width: 25%;
     padding-left: 1vw;
     display: flex;
     align-items: center;
+    background-color: #282c34;
+    color: #61dafb;
 }
 
 #navbar-menu-element-portfolio {

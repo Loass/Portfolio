@@ -20,21 +20,21 @@ function Portfolio() {
                 <div className="individual-portfolio-container">
                     <img src={Uppertown} alt="projet uppertown" />
                     <h4>Uppertown</h4>
-                    <p>Site web d'investissement immobilier en crowdfunding sous forme de tokens.</p>
+                    <p>Site web d'investissement immobilier en crowdfunding.</p>
                     <p>React, CSS, Node, Express, MongoDB</p>
                     <p>Réalisé en Novembre 2021</p>
                 </div>
                 <div className="individual-portfolio-container">
                     <img src={Uppertown} alt="projet uppertown" />
                     <h4>Uppertown</h4>
-                    <p>Site web d'investissement immobilier en crowdfunding sous forme de tokens.</p>
+                    <p>Site web d'investissement immobilier en crowdfunding.</p>
                     <p>React, CSS, Node, Express, MongoDB</p>
                     <p>Réalisé en Novembre 2021</p>
                 </div>
                 <div className="individual-portfolio-container">
                     <img src={Uppertown} alt="projet uppertown" />
                     <h4>Uppertown</h4>
-                    <p>Site web d'investissement immobilier en crowdfunding sous forme de tokens.</p>
+                    <p>Site web d'investissement immobilier en crowdfunding.</p>
                     <p>React, CSS, Node, Express, MongoDB</p>
                     <p>Réalisé en Novembre 2021</p>
                 </div>
