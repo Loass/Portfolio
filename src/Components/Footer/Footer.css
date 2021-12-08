@@ -1,6 +1,12 @@
 .footer-container{
     display: flex;
+    align-items: center;
     position:static;
     background-color: #282c34;
     color: #61dafb;
+    height: 4vh;
+}
+
+.footer-container h4{
+    padding-left: 10px;
 }

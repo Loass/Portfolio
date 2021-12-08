@@ -1,19 +1,37 @@
 import React from "react";
-import logoReact from "../../../logo.svg";
 import "./Intro.css";
+
+
+import profilePic from "../../../assets/profile-pic.png";
+import cv from "../../../assets/CV_Bonsignore_Lois.pdf";
+
 
 function Intro() {
   return (
-    <div className="wallpaper-general-container">
-    <div className="wallpaper-container">
-      <div className="wallpaper-title">
-        <h1>Développeur Fullstack Javascript</h1> 
-        <h2>Menton, Alpes Maritimes</h2>
-        <p>Passionné d'informatique depuis toujours, je suis devenu développeur web Fullstack. 
-          N'hésitez pas à me contacter pour plus d'informations.</p>
+    <section>
+      <div className="wallpaper-general-container" id="home">
+        <div className="wallpaper-container">
+          <div className="wallpaper-title">
+            <h1>Développeur Fullstack Javascript</h1>
+            <p>
+              Anciennement artisan à mon compte et passionné d'informatique
+              depuis toujours, j'ai lancé ma reconversion dans le développement
+              web en 2020.
+              <br />
+              <br />
+              Suite à des formations en autodidacte, j'ai réalisé la formation
+              du Bocal Academy en développement web Fullstack.
+            </p>
+          </div>
+          <img src={profilePic} alt="profil" className="ppic" />
+        </div>
+        <div className="button-container">
+          <a href={cv} download className="button-cv">
+            <p>Télechargez mon CV</p>
+          </a>
+        </div>
       </div>
-    </div>
-    </div>
+    </section>
   );
 }
 

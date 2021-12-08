@@ -2,10 +2,16 @@ import React from "react";
 
 import "./Competence.css";
 
+import gear from "../../../assets/gear.svg";
+
 function Competence() {
   return (
-    <div>
-      <h2 className="comp-title">Compétences et Technologies</h2>
+    <section>
+      <div id="comp"></div>
+      <h2 className="comp-title">
+        <img src={gear} alt="gear" className="svg" />
+        {` Compétences et Technologies`}
+      </h2>
       <div className="comp-container">
         <div className="front-comp-container">
           <h3>Front-end</h3>
@@ -34,7 +40,7 @@ function Competence() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

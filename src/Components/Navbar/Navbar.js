@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
-import list from "../../assets/list.svg"
+import cv from "../../assets/CV_Bonsignore_Lois.pdf";
+import list from "../../assets/list.svg";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -10,33 +11,59 @@ function Navbar() {
     <nav>
       <div className="navbar-container">
         <div className="navbar-title">
-          <h2>Loïs Bonsignore</h2>
+          <a href="#home" className="menu-a">
+            <h2>Loïs Bonsignore</h2>
+          </a>
         </div>
         <div className="navbar-menu">
-          <div id="navbar-menu-element-comp"><div className="navbar-menu-background"><h2>Compétences</h2></div></div>
-          <div id="navbar-menu-element-portfolio"><div className="navbar-menu-background"><h2 >Portfolio</h2></div></div>
-          <div id="navbar-menu-element-cv"><div className="navbar-menu-background"><h2>CV</h2></div></div>
-          <div id="navbar-menu-element-contact"><div className="navbar-menu-background"><h2>Contact</h2></div></div>
+          <a href="#comp" className="menu-a">
+            <p className="menu-option">Compétences</p>
+          </a>
+          <a href="#portfolio" className="menu-a">
+            <p className="menu-option">Portfolio</p>
+          </a>
+          <a href="#contact" className="menu-a">
+            <p className="menu-option">Contact</p>
+          </a>
+          <a href={cv} download className="button-cv">
+            <p>Télechargez mon CV</p>
+          </a>
         </div>
       </div>
       <div className="hidden-nav-container">
-      { menu ?
-      <div className="hidden-navbar-container">
-        <div className="menu-button-container-after">
-        <img src={list}  alt="" onClick={() => setMenu(current => !current)} className="menu-button" />
+        {menu ? (
+          <div className="hidden-navbar-container">
+            <div className="menu-button-container-after">
+              <img
+                src={list}
+                alt=""
+                onClick={() => setMenu((current) => !current)}
+                className="menu-button"
+              />
+            </div>
+            <div className="hidden-nav-menu">
+              <a href="#comp" className="menu-a">
+                <p className="navbar-menu-element">Compétences</p>
+              </a>
+              <a href="#portfolio" className="menu-a">
+                <p className="navbar-menu-element">Portfolio</p>
+              </a>
+              <a href="#contact" className="menu-a">
+                <p className="navbar-menu-element">Contact</p>
+              </a>
+            </div>
           </div>
-          <div className="hidden-nav-menu">
-          <p className="navbar-menu-element">Compétences</p>
-          <p className="navbar-menu-element">Portfolio</p>
-          <p className="navbar-menu-element">CV</p>
-          <p className="navbar-menu-element">Contact</p>
-        </div>
-      </div> :
-      <div className="menu-button-container">
-          <img src={list}  alt="" onClick={() => setMenu(current => !current)} className="menu-button" />
+        ) : (
+          <div className="menu-button-container">
+            <img
+              src={list}
+              alt=""
+              onClick={() => setMenu((current) => !current)}
+              className="menu-button"
+            />
+          </div>
+        )}
       </div>
-    }
-    </div>
     </nav>
   );
 }
