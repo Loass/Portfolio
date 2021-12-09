@@ -32,12 +32,12 @@
    align-items: center;
    color: white;
    margin: 30px;
-   transition: all 500ms;
+   transition: all 200ms;
    text-align: center;
 }
 
 .individual-portfolio-container:hover{
-    transform: scale(1.06);
+    transform: scale(1.04);
     
     
 }
@@ -46,17 +46,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     width: 100%;
 }
 
 .individual-portfolio-image{
-    width: 100%;
+    width: 90%;
    border: 2px solid white;
+   
 }
 .individual-portfolio-image-app{
     height: 100%;
+    border: 2px solid white;
 }
 
 .individual-portfolio-container h4{
@@ -112,12 +114,13 @@
         border: 1px solid black;
         border-radius: 3px;
         width: 50vw;
-        height: 500px;
-        justify-content: space-between;
+        height: 480px;
+        justify-content: center;
         align-items: center;
         color: white;
         margin: auto;
         margin-bottom: 20px;
+        padding: 30px;
      }
      .portfolio-title{
         display: flex;
@@ -144,7 +147,7 @@
         border: 1px solid black;
         border-radius: 3px;
         width: 75vw;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         color: white;
         margin-bottom: 5%;
