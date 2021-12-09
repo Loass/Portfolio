@@ -20,7 +20,7 @@ function Contact() {
   });
 
 
-const url = "http://localhost:9000/contact"
+const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http://localhost:9000/contact";
 
   const handleSubmit = (e) => {
     e.preventDefault();
