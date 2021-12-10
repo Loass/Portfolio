@@ -25,15 +25,15 @@ function Contact() {
 const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http://localhost:9000/contact";
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
+    console.log("result", contactInfo.lastname);   
+    if (contactInfo.lastname || contactInfo.firstname || contactInfo.email || contactInfo.message !== ""){
     e.target.reset();
-    axios.post(url, contactInfo).then((res) =>   console.log(res)).then(clearState)
-  };
-
-  const clearState = () => {
-    setContactInfo({ ...contactInfo, lastname: "", firstname: "", email: "", message: "" });
-  };
-
+      axios.post(url, contactInfo).then((res) => console.log(res)).then(clearState)
+  }else{
+    alert.error("Veuillez remplir tout les champs.")
+  }};
+  
   const handleClick = () => {
     if (contactInfo.lastname && contactInfo.firstname && contactInfo.email && contactInfo.message !== ""){
       return(
@@ -42,6 +42,11 @@ const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http:/
     }
     
   }
+
+  const clearState = () => {
+    setContactInfo({ ...contactInfo, lastname: "", firstname: "", email: "", message: "" });
+  };
+
 
   return (
     <Fragment>
