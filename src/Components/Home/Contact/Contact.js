@@ -22,25 +22,20 @@ function Contact() {
 
   const alert = useAlert()
 
-const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http://localhost:9000/contact";
+const url = "http://localhost:9000/contact";
 
   const handleSubmit = (e) => {
-    e.preventDefault(); 
-    console.log("result", contactInfo.lastname);   
-    if (contactInfo.lastname || contactInfo.firstname || contactInfo.email || contactInfo.message !== ""){
+    e.preventDefault();   
     e.target.reset();
       axios.post(url, contactInfo).then((res) => console.log(res)).then(clearState)
-  }else{
-    alert.error("Veuillez remplir tout les champs.")
-  }};
+  };
   
   const handleClick = () => {
     if (contactInfo.lastname && contactInfo.firstname && contactInfo.email && contactInfo.message !== ""){
       return(
         alert.success("Votre message a bien été envoyé!")        
       )
-    }
-    
+    }  
   }
 
   const clearState = () => {
@@ -88,6 +83,7 @@ const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http:/
               id="lastname"
               type="text"
               name="lastname"
+              required
               onChange={(e) =>
                 setContactInfo({ ...contactInfo, lastname: e.target.value })
               }
@@ -97,6 +93,7 @@ const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http:/
               id="firstname"
               type="text"
               name="firstname"
+              required
               onChange={(e) =>
                 setContactInfo({ ...contactInfo, firstname: e.target.value })
               }
@@ -106,6 +103,7 @@ const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http:/
               id="email"
               type="text"
               name="email"
+              required
               onChange={(e) =>
                 setContactInfo({ ...contactInfo, email: e.target.value })
               }
@@ -116,6 +114,7 @@ const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http:/
               name="message"
               cols="30"
               rows="10"
+              required
               onChange={(e) =>
                 setContactInfo({ ...contactInfo, message: e.target.value })
               }
