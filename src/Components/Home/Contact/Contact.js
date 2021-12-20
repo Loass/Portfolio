@@ -22,7 +22,7 @@ function Contact() {
 
   const alert = useAlert()
 
-const url = "https://portfolio-front-lois.osc-fr1.scalingo.io/" || "http://localhost:9000/contact";
+const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/" || "http://localhost:9000/contact";
 
   const handleSubmit = (e) => {
     e.preventDefault();   
@@ -33,7 +33,8 @@ const url = "https://portfolio-front-lois.osc-fr1.scalingo.io/" || "http://local
   const handleClick = () => {
     if (contactInfo.lastname && contactInfo.firstname && contactInfo.email && contactInfo.message !== ""){
       return(
-        alert.success("Votre message a bien été envoyé!")        
+        alert.success("Votre message a bien été envoyé!"),
+        console.log("test", contactInfo)        
       )
     }  
   }
