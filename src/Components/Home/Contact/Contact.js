@@ -8,7 +8,7 @@ import cv from "../../../assets/CV_Bonsignore_Lois.pdf";
 
 import React, { useState, Fragment } from "react";
 import { useAlert } from 'react-alert'
-const axios = require('axios')
+const Axios = require('axios')
 
 
 
@@ -22,12 +22,12 @@ function Contact() {
 
   const alert = useAlert()
 
-const url = "http://localhost:9000/contact";
+const url = "https://portfolio-front-lois.osc-fr1.scalingo.io/" || "http://localhost:9000/contact";
 
   const handleSubmit = (e) => {
     e.preventDefault();   
     e.target.reset();
-      axios.post(url, contactInfo).then((res) => console.log(res)).then(clearState)
+      Axios.post(url, contactInfo).then((res) => console.log(res)).then(clearState)
   };
   
   const handleClick = () => {

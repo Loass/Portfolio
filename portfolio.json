@@ -1,0 +1,30 @@
+[
+    {
+        "title": "UpperTown",
+        "image": "{Uppertown}",
+        "description": "Site web d'investissement immobilier en crowdfunding.",
+        "technos": "React, CSS, Node, Express, MongoDB",
+        "date": "Novembre 2021"
+    },
+    {
+        "title": "App meteo",
+        "image": "{AppMeteo}",
+        "description": "Application météo utilisant une API (OpenWeather).",
+        "technos": "React Native",
+        "date": "Octobre 2021"
+    },
+    {
+        "title": "De-livre-ium",
+        "image": "{DeLivreIum}",
+        "description": "Réseau social de critique de livres.",
+        "technos": "React, CSS, Node, Express, MongoDB",
+        "date": "Octobre 2021"
+    },
+    {
+        "title": "Blog",
+        "image": "{Blog}",
+        "description": "Site de création d'articles façon blog.",
+        "technos": "React",
+        "date": "Septembre 2021"
+    }
+]
