@@ -1,10 +1,8 @@
 import React from "react";
 import "./Intro.css";
 
-
 import profilePic from "../../../assets/profile-pic.png";
-import cv from "../../../assets/CV_Bonsignore_Lois.pdf";
-
+import cv from "../../../assets/CV-Lois-Bonsignore.pdf";
 
 function Intro() {
   return (

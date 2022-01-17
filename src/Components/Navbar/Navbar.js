@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
-import cv from "../../assets/CV_Bonsignore_Lois.pdf";
+import cv from "../../assets/CV-Lois-Bonsignore.pdf";
 import list from "../../assets/list.svg";
 
 function Navbar() {

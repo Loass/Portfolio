@@ -4,13 +4,11 @@ import phone from "../../../assets/phone.svg";
 import mail from "../../../assets/envelope.svg";
 import github from "../../../assets/github.svg";
 import linkedin from "../../../assets/linkedin.svg";
-import cv from "../../../assets/CV_Bonsignore_Lois.pdf";
+import cv from "../../../assets/CV-Lois-Bonsignore.pdf";
 
 import React, { useState, Fragment } from "react";
-import { useAlert } from 'react-alert'
-const Axios = require('axios')
-
-
+import { useAlert } from "react-alert";
+const Axios = require("axios");
 
 function Contact() {
   const [contactInfo, setContactInfo] = useState({
@@ -20,29 +18,43 @@ function Contact() {
     message: "",
   });
 
-  const alert = useAlert()
+  const alert = useAlert();
 
-const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http://localhost:9000/contact";
+  const url =
+    "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" ||
+    "http://localhost:9000/contact";
 
   const handleSubmit = (e) => {
-    e.preventDefault();   
+    e.preventDefault();
     e.target.reset();
-      Axios.post(url, contactInfo).then((res) => console.log(res)).then(clearState)
+    Axios.post(url, contactInfo)
+      .then((res) => console.log(res))
+      .then(clearState);
   };
-  
+
   const handleClick = () => {
-    if (contactInfo.lastname && contactInfo.firstname && contactInfo.email && contactInfo.message !== ""){
-      return(
+    if (
+      contactInfo.lastname &&
+      contactInfo.firstname &&
+      contactInfo.email &&
+      contactInfo.message !== ""
+    ) {
+      return (
         alert.success("Votre message a bien été envoyé!"),
-        console.log("test", contactInfo)        
-      )
-    }  
-  }
+        console.log("test", contactInfo)
+      );
+    }
+  };
 
   const clearState = () => {
-    setContactInfo({ ...contactInfo, lastname: "", firstname: "", email: "", message: "" });
+    setContactInfo({
+      ...contactInfo,
+      lastname: "",
+      firstname: "",
+      email: "",
+      message: "",
+    });
   };
-
 
   return (
     <Fragment>
@@ -78,51 +90,56 @@ const url = "https://portfolio-back-lois.osc-fr1.scalingo.io/contact" || "http:/
             <p>Télechargez mon CV</p>
           </a>
         </div>
-          <form className="contact-form-container" onSubmit={(e) => handleSubmit(e)}>
-            <label htmlFor="lastname">Nom</label>
-            <input
-              id="lastname"
-              type="text"
-              name="lastname"
-              required
-              onChange={(e) =>
-                setContactInfo({ ...contactInfo, lastname: e.target.value })
-              }
-            />
-            <label htmlFor="firstname">Prénom</label>
-            <input
-              id="firstname"
-              type="text"
-              name="firstname"
-              required
-              onChange={(e) =>
-                setContactInfo({ ...contactInfo, firstname: e.target.value })
-              }
-            />
-            <label htmlFor="email">Adresse email</label>
-            <input
-              id="email"
-              type="text"
-              name="email"
-              required
-              onChange={(e) =>
-                setContactInfo({ ...contactInfo, email: e.target.value })
-              }
-            />
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              cols="30"
-              rows="10"
-              required
-              onChange={(e) =>
-                setContactInfo({ ...contactInfo, message: e.target.value })
-              }
-            ></textarea>
-            <button type="submit" onClick={handleClick}>Envoyer</button>
-          </form>
-        </div>
+        <form
+          className="contact-form-container"
+          onSubmit={(e) => handleSubmit(e)}
+        >
+          <label htmlFor="lastname">Nom</label>
+          <input
+            id="lastname"
+            type="text"
+            name="lastname"
+            required
+            onChange={(e) =>
+              setContactInfo({ ...contactInfo, lastname: e.target.value })
+            }
+          />
+          <label htmlFor="firstname">Prénom</label>
+          <input
+            id="firstname"
+            type="text"
+            name="firstname"
+            required
+            onChange={(e) =>
+              setContactInfo({ ...contactInfo, firstname: e.target.value })
+            }
+          />
+          <label htmlFor="email">Adresse email</label>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            required
+            onChange={(e) =>
+              setContactInfo({ ...contactInfo, email: e.target.value })
+            }
+          />
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+            required
+            onChange={(e) =>
+              setContactInfo({ ...contactInfo, message: e.target.value })
+            }
+          ></textarea>
+          <button type="submit" onClick={handleClick}>
+            Envoyer
+          </button>
+        </form>
+      </div>
     </Fragment>
   );
 }

@@ -19,6 +19,8 @@ function Competence() {
             <p className="individual-comp-list">HTML / CSS</p>
             <p className="individual-comp-list">Javascript</p>
             <p className="individual-comp-list">React Js</p>
+            <p className="individual-comp-list">Next Js</p>
+            <p className="individual-comp-list">Sass</p>
             <p className="individual-comp-list">React Native</p>
           </div>
         </div>

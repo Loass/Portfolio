@@ -10,7 +10,7 @@
   margin-bottom: 2%;
   font-size: 200%;
   color: #61dafb;
-  background-color: #202020;
+  background-color: #282c34;
   padding: 5px;
 }
 
@@ -48,13 +48,11 @@
   color: white;
   width: 380px;
   padding: 10px 0 10px 40px;
-
 }
-h3{
+h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 @media (max-width: 1400px) {
@@ -91,15 +89,17 @@ h3{
     background-color: #202020;
     padding: 5px;
   }
-  .svg{
+  .svg {
     margin-right: 5%;
     width: 30px;
-    filter: invert(70%) sepia(55%) saturate(587%) hue-rotate(163deg) brightness(103%) contrast(97%);
+    filter: invert(70%) sepia(55%) saturate(587%) hue-rotate(163deg)
+      brightness(103%) contrast(97%);
   }
 }
 
-.svg{
+.svg {
   margin-right: 1%;
   width: 30px;
-  filter: invert(70%) sepia(55%) saturate(587%) hue-rotate(163deg) brightness(103%) contrast(97%);
+  filter: invert(70%) sepia(55%) saturate(587%) hue-rotate(163deg)
+    brightness(103%) contrast(97%);
 }
