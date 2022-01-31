@@ -16,29 +16,113 @@ function Competence() {
         <div className="front-comp-container">
           <h3>Front-end</h3>
           <div className="comp-list">
-            <p className="individual-comp-list">HTML / CSS</p>
-            <p className="individual-comp-list">Javascript</p>
-            <p className="individual-comp-list">React Js</p>
-            <p className="individual-comp-list">Next Js</p>
-            <p className="individual-comp-list">Sass</p>
-            <p className="individual-comp-list">React Native</p>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                alt="html"
+              />
+              <p>HTML</p>
+            </span>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                alt="css"
+              />
+              <p>CSS</p>
+            </span>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="javascript"
+              />
+              <p>Javascript</p>
+            </span>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="react"
+              />
+              <p>React Js</p>
+            </span>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
+                alt="next"
+              />
+              <p>Next Js</p>
+            </span>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                alt="sass"
+              />
+              <p>Sass</p>
+            </span>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="react-native"
+              />
+              <p>React Native</p>
+            </span>
           </div>
         </div>
         <div className="back-comp-container">
           <h3>Back-end</h3>
           <div className="comp-list">
-            <p className="individual-comp-list">Node</p>
-            <p className="individual-comp-list">Express</p>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="node"
+              />
+              <p>Node</p>
+            </span>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                alt="express"
+              />
+              <p>Express</p>
+            </span>
           </div>
         </div>
         <div className="tools-comp-container">
           <h3>Outils</h3>
           <div className="comp-list">
-            <p className="individual-comp-list">Git / GitLab / GitHub</p>
-            <p className="individual-comp-list">MongoDB / Mongo Compass</p>
-            <p className="individual-comp-list">Postman</p>
-            <p className="individual-comp-list">SCRUM / Agile</p>
-            <p className="individual-comp-list">Office</p>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="git"
+              />
+              <p>Git / GitLab / GitHub</p>
+            </span>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="mongoDb"
+              />
+              <p>MongoDB / Mongo Compass</p>
+            </span>
+            <span className="individual-comp-list">
+              <p>Postman</p>
+            </span>
+            <span className="individual-comp-list">
+              <p>SCRUM / Agile</p>
+            </span>
+            <span className="individual-comp-list">
+              <p>Office</p>
+            </span>
           </div>
         </div>
       </div>
