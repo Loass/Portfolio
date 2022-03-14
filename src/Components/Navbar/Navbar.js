@@ -19,6 +19,9 @@ function Navbar() {
           <a href="#comp" className="menu-a">
             <p className="menu-option">Compétences</p>
           </a>
+          <a href="#formation" className="menu-a">
+            <p className="menu-option">Formation</p>
+          </a>
           <a href="#portfolio" className="menu-a">
             <p className="menu-option">Portfolio</p>
           </a>
@@ -44,6 +47,9 @@ function Navbar() {
             <div className="hidden-nav-menu">
               <a href="#comp" className="menu-a">
                 <p className="navbar-menu-element">Compétences</p>
+              </a>
+              <a href="#formation" className="menu-a">
+                <p className="navbar-menu-element">Formation</p>
               </a>
               <a href="#portfolio" className="menu-a">
                 <p className="navbar-menu-element">Portfolio</p>

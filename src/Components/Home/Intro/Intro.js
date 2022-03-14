@@ -17,8 +17,12 @@ function Intro() {
               web en 2020.
               <br />
               <br />
-              Suite à des formations en autodidacte, j'ai réalisé la formation
-              du Bocal Academy en développement web Fullstack.
+              Suite à des formations en autodidacte, j'ai participé à la
+              formation du Bocal Academy de Nice en développement web Fullstack.
+              <br />
+              <br />
+              Depuis, je continue d'apprendre en réalisant des formations, des
+              projets et en apprenant de nouvelles technologies.
             </p>
           </div>
           <img src={profilePic} alt="profil" className="ppic" />
