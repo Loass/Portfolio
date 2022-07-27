@@ -1,8 +1,10 @@
-.formation-general-container {
-}
+.formation-general-container {}
+
 .formation-individual-container {
   margin: 5% 10%;
+  border-bottom: solid #282c34 2px;
 }
+
 @media (max-width: 1000px) {
   .formation-individual-container {
     margin: 5% 10%;

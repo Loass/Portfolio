@@ -12,17 +12,20 @@ function Intro() {
           <div className="wallpaper-title">
             <h1>Développeur Fullstack Javascript</h1>
             <p>
-              Anciennement artisan à mon compte et passionné d'informatique
+              Passionné d'informatique
               depuis toujours, j'ai lancé ma reconversion dans le développement
               web en 2020.
               <br />
               <br />
-              Suite à des formations en autodidacte, j'ai participé à la
-              formation du Bocal Academy de Nice en développement web Fullstack.
+              Suite à des formations en autodidacte sur internet, j'ai participé à la
+              formation du Bocal Academy de Nice en développement web Fullstack Javascript.
               <br />
               <br />
               Depuis, je continue d'apprendre en réalisant des formations, des
               projets et en apprenant de nouvelles technologies.
+              <br />
+              <br />
+              Je suis également en Freelance depuis mars 2022 en réalisant des sites internet pour des particuliers.
             </p>
           </div>
           <img src={profilePic} alt="profil" className="ppic" />

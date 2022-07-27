@@ -2,8 +2,8 @@ import React from "react";
 // img
 import Uppertown from "../../../assets/Uppertown_2.PNG";
 import DeLivreIum from "../../../assets/De-livre-ium.PNG";
-import AppMeteo from "../../../assets/App_meteo.PNG";
-import Blog from "../../../assets/Blog.PNG";
+import RecipeHub from "../../../assets/RecipeHub.png";
+import MyMoney from "../../../assets/MyMoney.png";
 import book from "../../../assets/book.svg";
 import GitHub from "../../../assets/github.svg";
 // styles
@@ -33,7 +33,7 @@ function Portfolio() {
                   />
                 </div>
                 <p>Site web d'investissement immobilier en crowdfunding.</p>
-                <p>Technos: React, CSS, Node, Express, MongoDB</p>
+                <p className="technos-p">Technos: React, CSS, Node, Express, MongoDB</p>
                 <p>Réalisé en Novembre 2021</p>
               </div>
             </a>
@@ -44,17 +44,37 @@ function Portfolio() {
               className="project-link"
             >
               <div className="individual-portfolio-container">
-                <h4>App meteo</h4>
+                <h4>RecipeHub</h4>
                 <div className="image-div">
                   <img
-                    src={AppMeteo}
+                    src={RecipeHub}
                     alt="projet meteo"
-                    className="individual-portfolio-image-app"
+                    className="individual-portfolio-image"
                   />
                 </div>
-                <p>Application météo utilisant une API (OpenWeather).</p>
-                <p>Techno: React Native</p>
-                <p>Réalisé en Octobre 2021</p>
+                <p>Application de création et consultation de recettes de cuisine.</p>
+                <p className="technos-p">Techno: React Js, Css, Firestore</p>
+                <p>Réalisé en Avril 2022</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/LoisBonsignore/Blog"
+              className="project-link"
+            >
+              <div className="individual-portfolio-container">
+                <h4>MyMoney</h4>
+                <div className="image-div">
+                  <img
+                    src={MyMoney}
+                    alt="projet blog"
+                    className="individual-portfolio-image"
+                  />
+                </div>
+                <p>Site de Portefeuille personnel.</p>
+                <p className="technos-p">Techno: React JS, Css, Firestore</p>
+                <p>Réalisé en Février 2022</p>
               </div>
             </a>
           </div>
@@ -73,38 +93,18 @@ function Portfolio() {
                   />
                 </div>
                 <p>Réseau social de critique de livres.</p>
-                <p>Technos: React, CSS, Node, Express, MongoDB</p>
+                <p className="technos-p">Technos: React, CSS, Node, Express, MongoDB</p>
                 <p>Réalisé en Octobre 2021</p>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://github.com/LoisBonsignore/Blog"
-              className="project-link"
-            >
-              <div className="individual-portfolio-container">
-                <h4>Blog</h4>
-                <div className="image-div">
-                  <img
-                    src={Blog}
-                    alt="projet blog"
-                    className="individual-portfolio-image"
-                  />
-                </div>
-                <p>Site de création d'articles façon blog.</p>
-                <p>Techno: React</p>
-                <p>Réalisé en Septembre 2021</p>
               </div>
             </a>
           </div>
         </div>
         <div className="more-container">
           <a href="https://github.com/LoisBonsignore">
-            <p>
+            <h4>
               Vous pouvez consulter mes autres projets sur mon profil GitHub{" "}
               <img src={GitHub} alt="github" className="icon-github" />
-            </p>
+            </h4>
           </a>
         </div>
       </div>

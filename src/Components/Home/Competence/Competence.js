@@ -3,6 +3,9 @@ import React from "react";
 import "./Competence.css";
 
 import gear from "../../../assets/gear.svg";
+import redux from "../../../assets/redux.svg";
+import postman from "../../../assets/postman.svg";
+import office from "../../../assets/office.svg";
 
 function Competence() {
   return (
@@ -43,6 +46,14 @@ function Competence() {
             <span className="individual-comp-list">
               <img
                 className="icon-comp"
+                src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg"
+                alt="typescript"
+              />
+              <p>Typescript</p>
+            </span>
+            <span className="individual-comp-list">
+              <img
+                className="icon-comp"
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                 alt="react"
               />
@@ -51,18 +62,18 @@ function Competence() {
             <span className="individual-comp-list">
               <img
                 className="icon-comp"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
-                alt="next"
+                src={redux}
+                alt="react"
               />
-              <p>Next Js</p>
+              <p>Redux</p>
             </span>
             <span className="individual-comp-list">
               <img
                 className="icon-comp"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-                alt="sass"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg"
+                alt="next"
               />
-              <p>Sass</p>
+              <p>Next Js</p>
             </span>
             <span className="individual-comp-list">
               <img
@@ -115,12 +126,27 @@ function Competence() {
               <p>MongoDB / Mongo Compass</p>
             </span>
             <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src={postman}
+                alt="postman"
+              />
               <p>Postman</p>
             </span>
             <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-agile-computer-programming-flaticons-flat-flat-icons.png"
+                alt="agile"
+              />
               <p>SCRUM / Agile</p>
             </span>
             <span className="individual-comp-list">
+              <img
+                className="icon-comp"
+                src={office}
+                alt="office"
+              />
               <p>Office</p>
             </span>
           </div>

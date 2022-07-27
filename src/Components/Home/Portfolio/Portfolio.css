@@ -1,8 +1,8 @@
-#portfolio{
+#portfolio {
     padding-top: 1%;
 }
 
-.portfolio-title{
+.portfolio-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,39 +10,39 @@
     font-size: 200%;
 }
 
-.portfolio-container{
+.portfolio-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 80px;
     margin-bottom: 80px;
-  
+
 }
 
-.individual-portfolio-container{
-   display: flex;
-   flex-direction: column;
-   background-color: #282c34;
-   padding: 10px;
-   border: 1px solid black;
-   border-radius: 3px;
-   width: 600px;
-   justify-content: space-between;
-   align-items: center;
-   color: white;
-   margin: 30px;
-   transition: all 200ms;
-   text-align: center;
+.individual-portfolio-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #282c34;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 30px;
+    transition: all 200ms;
+    text-align: center;
 }
 
-.individual-portfolio-container:hover{
-    transform: scale(1.04);
-    
-    
+.individual-portfolio-container:hover {
+    transform: scale(1.18);
+
+
 }
 
-.image-div{
+.image-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,36 +51,41 @@
     width: 100%;
 }
 
-.individual-portfolio-image{
+.individual-portfolio-image {
     width: 90%;
-   border: 2px solid white;
-   
+    border: 2px solid white;
+
 }
-.individual-portfolio-image-app{
+
+.individual-portfolio-image-app {
     height: 100%;
     border: 2px solid white;
 }
 
-.individual-portfolio-container h4{
+.individual-portfolio-container h4 {
     color: #61dafb;
     font-size: 120%;
 }
 
-.svg{
-    margin-right: 1%;
-    width: 30px;
-  
+.technos-p {
+    color: #61dafb;
 }
 
-.project-link{
+.svg {
+    margin-right: 1%;
+    width: 30px;
+
+}
+
+.project-link {
     color: white;
     text-decoration: none;
 }
 
-.more-container{
+.more-container {
     display: flex;
     justify-content: center;
-   flex-direction: row;
+    flex-direction: row;
     margin: auto;
     width: 80%;
     color: black;
@@ -88,25 +93,26 @@
     margin-bottom: 2%;
     text-align: center;
 }
-.more-container a{
+
+.more-container a {
     color: black;
 }
 
-.icon-github{
+.icon-github {
     width: 25px;
-    
+    margin-left: 2px;
     filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(217deg) brightness(96%) contrast(108%);
 }
 
-@media (max-width: 1000px){
-    .portfolio-container{
+@media (max-width: 1000px) {
+    .portfolio-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .individual-portfolio-container{
+    .individual-portfolio-container {
         display: flex;
         flex-direction: column;
         background-color: #282c34;
@@ -121,8 +127,9 @@
         margin: auto;
         margin-bottom: 20px;
         padding: 30px;
-     }
-     .portfolio-title{
+    }
+
+    .portfolio-title {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -131,15 +138,15 @@
     }
 }
 
-@media (max-width: 600px){
-    .portfolio-container{
+@media (max-width: 600px) {
+    .portfolio-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .individual-portfolio-container{
+    .individual-portfolio-container {
         display: flex;
         flex-direction: column;
         background-color: #282c34;
@@ -151,18 +158,19 @@
         align-items: center;
         color: white;
         margin-bottom: 5%;
-     }
-     .portfolio-title{
+    }
+
+    .portfolio-title {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 120px;
         font-size: 150%;
     }
-    .svg{
+
+    .svg {
         margin-right: 5%;
         width: 30px;
-      
+
     }
 }
-

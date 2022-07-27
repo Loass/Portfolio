@@ -47,7 +47,7 @@ export default function Formation() {
           <p>Janvier 2022</p>
           <p>
             Formation en ligne d'approfondissement en Javascript, sous forme de
-            vidéos de théorique, challenges et projets.
+            cours de théorique, challenges et projets.
           </p>
           <ul>
             <li>JavaScript (mise à jour EcmaScript)</li>
@@ -63,7 +63,7 @@ export default function Formation() {
           <p>Février 2022</p>
           <p>
             Formation en ligne d'approfondissement en React, sous forme de
-            vidéos de théorique, challenges et projets.
+            cours de théorique, challenges et projets.
           </p>
           <ul>
             <li>Approfondissement des concepts de React</li>

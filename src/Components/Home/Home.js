@@ -13,8 +13,8 @@ function Home() {
     <div className="background">
       <Intro />
       <Competence />
-      <Formation />
       <Portfolio />
+      <Formation />
       <Contact />
     </div>
   );

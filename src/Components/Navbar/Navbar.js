@@ -19,11 +19,11 @@ function Navbar() {
           <a href="#comp" className="menu-a">
             <p className="menu-option">Compétences</p>
           </a>
-          <a href="#formation" className="menu-a">
-            <p className="menu-option">Formation</p>
-          </a>
           <a href="#portfolio" className="menu-a">
             <p className="menu-option">Portfolio</p>
+          </a>
+          <a href="#formation" className="menu-a">
+            <p className="menu-option">Formation</p>
           </a>
           <a href="#contact" className="menu-a">
             <p className="menu-option">Contact</p>
