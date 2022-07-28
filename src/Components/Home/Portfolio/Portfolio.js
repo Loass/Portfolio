@@ -4,6 +4,7 @@ import Uppertown from "../../../assets/Uppertown_2.PNG";
 import DeLivreIum from "../../../assets/De-livre-ium.PNG";
 import RecipeHub from "../../../assets/RecipeHub.png";
 import MyMoney from "../../../assets/MyMoney.png";
+import appMeteo from "../../../assets/App_meteo.PNG";
 import book from "../../../assets/book.svg";
 import GitHub from "../../../assets/github.svg";
 // styles
@@ -40,7 +41,7 @@ function Portfolio() {
           </div>
           <div>
             <a
-              href="https://github.com/LoisBonsignore/App-Meteo_React-Native"
+              href="https://github.com/LoisBonsignore/Recipe-hub"
               className="project-link"
             >
               <div className="individual-portfolio-container">
@@ -60,7 +61,7 @@ function Portfolio() {
           </div>
           <div>
             <a
-              href="https://github.com/LoisBonsignore/Blog"
+              href="https://github.com/LoisBonsignore/My-money"
               className="project-link"
             >
               <div className="individual-portfolio-container">
@@ -72,7 +73,7 @@ function Portfolio() {
                     className="individual-portfolio-image"
                   />
                 </div>
-                <p>Site de Portefeuille personnel.</p>
+                <p>Site de financial tracker personnel.</p>
                 <p className="technos-p">Techno: React JS, Css, Firestore</p>
                 <p>Réalisé en Février 2022</p>
               </div>
@@ -94,6 +95,26 @@ function Portfolio() {
                 </div>
                 <p>Réseau social de critique de livres.</p>
                 <p className="technos-p">Technos: React, CSS, Node, Express, MongoDB</p>
+                <p>Réalisé en Octobre 2021</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/LoisBonsignore/App-Meteo_React-Native"
+              className="project-link"
+            >
+              <div className="individual-portfolio-container">
+                <h4>App Meteo</h4>
+                <div className="image-div">
+                  <img
+                    src={appMeteo}
+                    alt="projet de-livre-ium"
+                    className="individual-portfolio-image-app"
+                  />
+                </div>
+                <p>Application météo réalisé avec l'API OpenWeather</p>
+                <p className="technos-p">Technos: React Native, Expo, API OpenWeather</p>
                 <p>Réalisé en Octobre 2021</p>
               </div>
             </a>

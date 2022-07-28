@@ -1,5 +1,9 @@
-h2{
+h2 {
   font-size: 170%
+}
+
+.navbar-title h2:hover {
+  color: white;
 }
 
 .navbar-container {
@@ -41,40 +45,41 @@ h2{
   color: #61dafb;
 }
 
-.menu-option{
+
+.menu-option {
   font-size: 18px;
 }
 
-.menu-option:hover{
+.menu-option:hover {
   color: white;
 }
 
 .button-cv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    margin-top: 5px;
-    padding: 5px;
-    height: 25px;
-    width: 200px;
-    border: 2px solid #61dafb;
-    border-radius: 3px;
-    color: #61dafb;
-    background-color: #202020;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  height: 25px;
+  width: 200px;
+  border: 2px solid #61dafb;
+  border-radius: 3px;
+  color: #61dafb;
+  background-color: #202020;
+  text-decoration: none;
 }
 
-.button-cv:hover{
+.button-cv:hover {
   background-color: #282c34;
   color: white;
 }
 
-.button-cv p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.button-cv p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .menu-a {
@@ -108,23 +113,27 @@ h2{
     background-color: #282c34;
     color: #61dafb;
   }
-  h2{
+
+  h2 {
     font-size: 120%
   }
-  .menu-option{
+
+  .menu-option {
     font-size: 15px;
   }
+
   .button-cv {
     height: 25px;
     width: 150px;
-   
-}
+
+  }
 }
 
 @media (max-width: 700px) {
   .navbar-container {
     display: none;
   }
+
   .hidden-navbar-container {
     display: flex;
     flex-direction: column;
@@ -132,6 +141,7 @@ h2{
     position: fixed;
     z-index: 6;
   }
+
   .hidden-nav-menu {
     display: flex;
     width: 100%;
@@ -140,20 +150,23 @@ h2{
     color: #61dafb;
     border-bottom: 2px solid #61dafb;
   }
-  
+
   .menu-button-container {
     display: flex;
-   
+
   }
+
   .menu-button-container-after {
     width: 100%;
     display: flex;
     background-color: white;
   }
+
   .menu-button-after {
     width: 14%;
   }
-  .menu-button{
+
+  .menu-button {
     width: 14%;
   }
 
